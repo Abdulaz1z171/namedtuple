@@ -1,8 +1,11 @@
 from collections import namedtuple
 
-# Student = namedtuple('Student',['full_name','age','course','field'])
-# john = Student('John Smith', '24','1-course','Energetic')
-# modified = john._replace(full_name = 'Alex Brown')
+"""
+Student = namedtuple('Student',['full_name','age','course','field'])
+john = Student('John Smith', '24','1-course','Energetic')
+modified = john._replace(full_name = 'Alex Brown')
+
+"""
 
 
 
@@ -34,12 +37,17 @@ print(university1)
 """
 
 
+
+"""
 Person = namedtuple('Person','name age gender',defaults = ['18','male'])
 person1 = Person('Alex')
-print(person1._fields)
-print(Person._field_defaults)
+print(person1)
+print(Person._field_defaults)  # {'age': '18', 'gender': 'male'}
+"""
 
 
+"""
+# students listiga malumot qushihuvchi funksiya
 students = []
 def add_information_by_namedtuple_fuction():
     while input('Do you want to add information to our university? ') != 'no':
@@ -55,4 +63,5 @@ def add_information_by_namedtuple_fuction():
             continue
     else:
         print(students)
+"""
 
